@@ -2,9 +2,7 @@ version: '3.8'
 
 services:
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/1mrazort1/cmsensi:latest
     container_name: CMSEnsi
     ports:
       - "8081:8000"
